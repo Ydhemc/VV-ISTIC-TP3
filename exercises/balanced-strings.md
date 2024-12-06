@@ -26,3 +26,23 @@ Use the project in [tp3-balanced-strings](../code/tp3-balanced-strings) to compl
 
 ## Answer
 
+J’ai commencer par identifié plusieurs caractéristiques des chaînes, tel que :
+
+    - Chaîne vide : Chaîne ne contenant aucun caractère.
+    - Symboles non appariés : Symboles n'ayant pas de correspondance {, [, (.
+    - Chaînes équilibrées valides : Chaînes où tous les symboles sont correctement appariés dans le bon ordre.
+    - Chaînes mal équilibrées : Chaînes où des symboles sont dans le mauvais ordre ou non appariés.
+    - Oublie de fermeture ou d'ouverture : Chaînes contenant des symboles en surplus (ouverture ou fermeture supplémentaires).
+
+Pour chaque cas, j’ai écrit des cas de test.
+
+Coverage:
+    - Utilisation de coverage par défaut proposer par éclipse. L'ensemble est vert mise à part une ligne (jaune) puisque correspond a un cas plus spécifique.
+
+Utilisation de PIT:
+    /VV-ISTIC-TP3/code/tp3-balanced-strings$ mvn org.pitest:pitest-maven:mutationCoverage
+
+    Resultat:
+        - Line Coverage 11/12
+        - Mutation Coverage 17/17
+    Un resultat correct.
