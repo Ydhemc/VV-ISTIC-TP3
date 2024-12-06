@@ -53,3 +53,43 @@ Use the project in [tp3-date](../code/tp3-date) to complete this exercise.
 
 ## Answer
 
+1. Caractéristiques et blocs identifiés
+
+- isValidDate(int day, int month, int year)
+
+    - Caractéristiques :
+        Jour : Validité selon le mois et l'année.
+            Blocs : Jour valide, jour invalide (ex. 32 janvier).
+        Mois : Validité de la plage (1 à 12).
+            Blocs : Mois valide, mois invalide (ex. 0 ou 13).
+        Année : Tous les entiers positifs.
+            Blocs : Année positive, négative.
+
+- isLeapYear(int year)
+
+    - Caractéristiques :
+        Année divisible par 4.
+            Blocs : Oui, Non.
+        Année divisible par 100 mais pas par 400.
+            Blocs : Oui, Non.
+
+- nextDate() et previousDate()
+
+    - Caractéristiques communes :
+        - Transition de jour.
+            - Blocs : Jour au milieu du mois, dernier jour du mois, dernier jour de l'année.
+        - Transition de mois.
+            Blocs : Mois de 30 jours, 31 jours, février (avec ou sans année bissextile).
+        Transition d'année.
+            Blocs : Année normale, année bissextile.
+
+- compareTo(Date other)
+
+    - Caractéristiques :
+        - Comparaison entre deux dates.
+            Blocs : Date antérieure, identique, postérieure.
+
+- Constructeur Date(int day, int month, int year)
+    - Utilise les mêmes caractéristiques que isValidDate.
+
+
