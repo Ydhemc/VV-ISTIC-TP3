@@ -15,3 +15,18 @@ Include the improved test code in this file.
 
 ## Answer
 
+- Test smells implémentés par les règles PMD
+
+    En analysant la documentation, les règles PMD permettent d’identifier plusieurs test tel que:
+
+    - L'absence ou le manque de clarté des assertions dans les tests.
+    - Les dépendance à des configurations ou données externes non déclarées.
+    - Utilisation excessive de configurations globales inutilisées.
+
+- Utilisation d'une règle PMD
+
+    - J’ai utilisé la règle JUnitTestsShouldIncludeAssert qui a permis d’identifier le test smell Assertion Roulette, où des tests manquent d'assertions claires pour diagnostiquer les échecs.
+
+- Amélioration
+    - Pour corriger ce test smell, il est recommandé d’ajouter des assertions explicites et des messages descriptifs afin de rendre les tests plus lisibles et faciles à maintenir.
+    
